@@ -21,11 +21,6 @@
 		// 2 Aug 2017 - Special Case : Updated to match Twitter's new interface
 		var src = el.getAttribute("src");
 		if (src === null || src === ""){
-			console.error(el);
-			console.error(el.parentNode);
-			console.error(el.parentNode.querySelector(".Gallery-content"));
-			console.error(el.parentNode.querySelector(".Gallery-content>.Gallery-media"));
-			console.error(el.parentNode.querySelector(".Gallery-content>.Gallery-media>img"));
 			el = el.parentNode.querySelector(".Gallery-content>.Gallery-media>img");
 			if (el === null){return;}}
 		
